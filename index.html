@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+    <body>
+        <div id="div-slider">
+            <h1>Length: <output id="value"></output></h1>
+            <input id="slider" type="range" min="8" max="32" step="1.0"/>
+            <div id="div-senha">
+                    <input type="button" id="gerar-senha" value="Generate" onclick="GerarSenha()"/>
+                    <h1 id="senha" name="senha">blank</h1>
+                    <input type="checkbox"id="numeros"/><label for="numeros">Numbers</label> 
+                    <input type="checkbox"id="maiusculas"/><label for="maiusculas">Uppercase Letters</label> 
+                    <input type="checkbox"id="minusculas"/><label for="minusculas">Lowercase Letters</label>
+                    <input type="checkbox"id="simbolos"/><label for="simbolos">Simbols</label> 
+            </div>
+        </div>
+        <h2>Made by: Asaf Amithiel, with: CSS, HTML and JavaScript</h2>
+    </body>
+    <script src="script.js" type="text/javascript" defer></script>
+</html>
