@@ -1,60 +1,90 @@
+*{
+  font-family: monospace;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100vw;
+  
+}
+header, main, aside, footer{
+  height: calc(25vh - 8px);
+  margin: 3px;
+  display: flex;
+  background: lightgray;
+}
+header{
+  flex-direction: column;
+  text-align: center;
+  flex: 1 1 100vw;
+}
+main{
+  flex-direction: column;
+  text-align: center;
+  flex: 1 1 100vw;
+}
+aside{
+  flex-direction: row;
+  flex: 1 1 100vw;
+}
+footer{
+  flex: 2 1 100vw;
+}
+.checkboxes{
+  font-size: 25px;
+  width: 25%;
+  margin: 1px;
+  background: gray;
+}
+.checkboxes input {
+  opacity: 1;
+  cursor: pointer;
+}
+.boxes{
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: black;
+}
+
+#slider{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: gray; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+#slider::-webkit-slider-thumb {
+  border-radius: 15px;
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: darkgray; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#slider::-moz-range-thumb {
+  border-radius: 15px;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: darkgray; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
 #gerar-senha{
-    font-family: cursive;
-    width: 160px;
-    height: 32px;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 5px;
-    cursor: pointer;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 25px;
+  width: 50%;
+  height: 30%;
 }
-#div-senha{
-    border-radius: 15px;
-    width: 920px;
-    height: 360px;
-    background: white;
-    position: absolute;
-}
-#div-slider{
-    font-family: cursive;
-    text-align: center;
-    border-radius: 15px;
-    background: whitesmoke;
-    outline-color: gray;
-    outline-width: 3px;
-    outline-style: inset;
-    width: 920px;
-    height: 480px;
-    align-items: center;
-}
-#slider {
-    -webkit-appearance: none; 
-    appearance: none;
-    width: 100%; 
-    height: 25px; 
-    background: lightgray;
-    outline: none;
-    opacity: 1; 
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  #slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    border: 0;
-    background: gray;
-    cursor: pointer;
-  }
-  
-  #slider::-moz-range-thumb {
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    border: 0;
-    background: gray;
-    cursor: pointer;
-  }
-  

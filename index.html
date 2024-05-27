@@ -7,19 +7,35 @@
     <title>Password Generator</title>
 </head>
     <body>
-        <div id="div-slider">
+        <header>
             <h1>Length: <output id="value"></output></h1>
             <input id="slider" type="range" min="8" max="32" step="1.0"/>
-            <div id="div-senha">
-                    <input type="button" id="gerar-senha" value="Generate" onclick="GerarSenha()"/>
-                    <h1 id="senha" name="senha">blank</h1>
-                    <input type="checkbox"id="numeros"/><label for="numeros">Numbers</label> 
-                    <input type="checkbox"id="maiusculas"/><label for="maiusculas">Uppercase Letters</label> 
-                    <input type="checkbox"id="minusculas"/><label for="minusculas">Lowercase Letters</label>
-                    <input type="checkbox"id="simbolos"/><label for="simbolos">Simbols</label> 
+        </header>
+
+        <main>
+            <input type="button" id="gerar-senha" value="Generate" onclick="GerarSenha()"/>
+            <h1 id="senha" name="senha">blank</h1>
+        </main>
+
+        <aside>
+            <div class="checkboxes">
+                <input type="checkbox"id="numeros" class="boxes"/><label for="numeros">Numbers</label> 
             </div>
-        </div>
-        <h2>Made by: Asaf Amithiel, with: CSS, HTML and JavaScript</h2>
+            <div class="checkboxes">
+                <input type="checkbox"id="maiusculas" class="boxes"/><label for="maiusculas">Uppercase Letters</label>
+            </div>
+
+            <div class="checkboxes">
+                <input type="checkbox"id="minusculas" class="boxes"/><label for="minusculas">Lowercase Letters</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox"id="simbolos" class="boxes"/><label for="simbolos">Simbols</label>
+            </div>
+        </aside>
+        
+        <footer>
+            <h2>Made by: Asaf Amithiel, with: CSS, HTML and JavaScript,2024</h2>
+        </footer>
     </body>
     <script src="script.js" type="text/javascript" defer></script>
 </html>
