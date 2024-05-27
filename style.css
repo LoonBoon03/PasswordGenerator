@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body{
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   margin: 3px;
@@ -31,7 +31,7 @@ main{
 }
 aside{
   flex-direction: row;
-  flex: 1 1 100vw;
+  flex: 1 2 100vw;
 }
 footer{
   flex: 2 1 100vw;
