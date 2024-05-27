@@ -31,14 +31,14 @@ main{
 }
 aside{
   flex-direction: row;
-  flex: 1 2 100vw;
+  flex: 1 1 100vw;
 }
 footer{
   flex: 2 1 100vw;
 }
 .checkboxes{
   font-size: 25px;
-  width: calc(25% - 2px);
+  width: 25%;
   margin: 1px;
   background: gray;
 }
