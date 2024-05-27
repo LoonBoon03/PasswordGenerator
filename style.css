@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 body{
-  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   margin: 3px;
