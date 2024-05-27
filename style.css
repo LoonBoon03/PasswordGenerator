@@ -13,7 +13,7 @@ body{
   
 }
 header, main, aside, footer{
-  height: calc(25vh - 8px);
+  height: calc(25vh - 16px);
   margin: 3px;
   display: flex;
   background: lightgray;
@@ -33,10 +33,11 @@ aside{
   flex: 1 1 100vw;
 }
 footer{
-  flex: 2 1 100vw;
+  flex: 1 1 100vw;
 }
 .checkboxes{
-  font-size: 25px;
+  font-weight: bold;
+  font-size: 15px;
   width: 25%;
   margin: 1px;
   background: gray;
@@ -65,26 +66,32 @@ footer{
   transition: opacity .2s;
 }
 #slider::-webkit-slider-thumb {
-  border-radius: 15px;
+  border-radius: 20px;
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  width: 35px; /* Set a specific slider handle width */
+  height: 35px; /* Slider handle height */
   background: darkgray; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
 #slider::-moz-range-thumb {
-  border-radius: 15px;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  border-radius: 20px;
+  width: 35px; /* Set a specific slider handle width */
+  height: 35px; /* Slider handle height */  
   background: darkgray; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 #gerar-senha{
+  margin: 10px;
+  border: none;
+  cursor: pointer;
   margin-left: 25%;
   margin-right: 25%;
   font-size: 25px;
   width: 50%;
   height: 30%;
+}
+#gerar-senha:active {
+  background-color: darkgray;
 }
